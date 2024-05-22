@@ -1,0 +1,15 @@
+asgiref
+certifi
+Django
+django-admin-honeypot
+django-session-timeout
+django-admin-thumbnails
+idna
+Pillow
+python-decouple
+requests
+six
+sqlparse
+tzdata
+urllib3
+django-ckeditor
