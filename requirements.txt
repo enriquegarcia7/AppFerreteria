@@ -13,3 +13,5 @@ sqlparse
 tzdata
 urllib3
 django-ckeditor
+psycopg2-binary
+django-allauth
