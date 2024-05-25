@@ -6,6 +6,7 @@ def home(request):
 
     for product in products:
         reviews = ReviewRating.objects.filter(product_id=product.id, status=True)
+        
 
 
     context = {
