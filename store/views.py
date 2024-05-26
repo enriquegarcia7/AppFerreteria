@@ -106,14 +106,6 @@ def submit_review(request, product_id):
                 data.save()
                 messages.success(request, 'Muchas gracias!, tu comentario ha sido publicado.')
                 return redirect(url)
-
-def convertir_precio(request):
-    precio_clp = float(request.GET.get('precio_clp', 0))
-    tipo_cambio = obtener_tipo_cambio()
-    precio_usd = precio_clp / tipo_cambio
-    context = {
-        'precio_clp': precio_clp,
-        'precio_usd': round(precio_usd, 2),
-        'tipo_cambio': tipo_cambio
-    }
-    return render(request, 'conversion.html', context)
+    def obtener_tipo_cambio(request):
+        precio_usd = obtener_tipo_cambio()
+        return render(request, 'store.html', {'precio_usd': precio_usd})

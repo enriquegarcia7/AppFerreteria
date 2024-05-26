@@ -4,7 +4,7 @@ def obtener_tipo_cambio():
     api_url = 'https://si3.bcentral.cl/SieteRestWS/SieteRestWS.ashx'
     params = {
         'user': 'ni.sabando@duocuc.cl   ',
-        'pass': 'tu_contrasena',
+        'pass': 'Letmebleed.00',
         'timeseries': 'F073.TCO.PRE.Z.D',
         'function': 'GetSeries',
     }
