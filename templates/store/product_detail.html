@@ -79,7 +79,7 @@
               <h5>Lo lamentamos, este es un producto fuera de stock</h5>
               {% else %}
 
-              <button type="submit" class="btn  btn-primary"> <span class="text">Agregar al Carrito</span> <i class="fas fa-shopping-cart"></i>  </button>
+              <button type="submit" class="btn  btn-warning"> <span class="text">Agregar al Carrito</span> <i class="fas fa-shopping-cart"></i>  </button>
 
               {% endif %}
 
@@ -130,7 +130,7 @@
             {% if user.is_authenticated %}
 
             {% if orderproduct %}
-            <input type="submit" name="" value="Enviar reseña" class="btn btn-primary">
+            <input type="submit" name="" value="Enviar reseña" class="btn btn-warning">
             {% else %}
               <p>Primero necesitas comprar el producto para escribir una reseña!</p>
             {% endif %}
