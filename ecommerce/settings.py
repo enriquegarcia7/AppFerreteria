@@ -93,8 +93,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'FerramasDB',
-        'USER': 'Enrique',
-        'PASSWORD': 'S1nt3@g4',
+        'USER': 'postgres',
+        'PASSWORD': 'Miau1029',
         'HOST': 'localhost',
         'PORT': '5432',
     }

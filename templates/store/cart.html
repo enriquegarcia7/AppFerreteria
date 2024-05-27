@@ -76,7 +76,7 @@
             </div> <!-- price-wrap .// -->
         </td>
         <td class="text-right">
-        <a href="{% url 'remove_cart_item' cart_item.product.id cart_item.id %}" class="btn btn-danger"> Eliminar</a>
+        <a href="{% url 'remove_cart_item' cart_item.product.id cart_item.id %}" class="btn btn-outline-danger"> Eliminar</a>
         </td>
     </tr>
     {% endfor %}
@@ -95,7 +95,7 @@
                   <dd class="text-right">{{ total }}</dd>
                 </dl>
                 <dl class="dlist-align">
-                  <dt>Impuesto IVA (16%):</dt>
+                  <dt>Impuesto IVA (19%):</dt>
                   <dd class="text-right"> {{ tax }}</dd>
                 </dl>
                 <dl class="dlist-align">
@@ -106,8 +106,8 @@
                 <p class="text-center mb-3">
                     <img src="{% static './images/misc/payments.png' %}" height="26">
                 </p>
-                <a href="{% url 'checkout' %}" class="btn btn-primary btn-block"> Pagar </a>
-                <a href="{% url 'store' %}" class="btn btn-light btn-block">Continuar comprando</a>
+                <a href="{% url 'checkout' %}" class="btn btn-warning btn-block"> Pagar </a>
+                <a href="{% url 'store' %}" class="btn btn-outline-warning btn-block">Continuar comprando</a>
             </div> <!-- card-body.// -->
             </div> <!-- card.// -->
 
