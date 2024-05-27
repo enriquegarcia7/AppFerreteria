@@ -48,7 +48,7 @@
               <p>{{ single_product.description }}</p>
 
 
-              <hr>
+              {% comment %} <hr>
               <div class="row">
                 <div class="item-option-select">
                   <h6>Escoge el color</h6>
@@ -73,7 +73,7 @@
 
                 </div>
               </div> <!-- row.// -->
-              <hr>
+              <hr> {% endcomment %}
 
               {% if single_product.stock <= 0 %}
               <h5>Lo lamentamos, este es un producto fuera de stock</h5>
