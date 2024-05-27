@@ -214,7 +214,7 @@ def checkout(request, total=0, quantity=0, cart_items=None):
         for cart_item in cart_items:
             total += (cart_item.product.price * cart_item.quantity)
             quantity += cart_item.quantity
-        tax = round((16/100) * total, 2)
+        tax = round((19/100) * total, 2)
         grand_total = total + tax
 
     except ObjectDoesNotExist:
