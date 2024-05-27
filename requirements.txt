@@ -15,3 +15,5 @@ urllib3
 django-ckeditor
 psycopg2-binary
 django-allauth
+psycopg2-binary
+djangorestframework
