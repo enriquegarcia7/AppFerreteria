@@ -92,7 +92,7 @@ AUTH_USER_MODEL = 'accounts.Account'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'FerramasBD',
+        'NAME': 'FerramasDB',
         'USER': 'postgres',
         'PASSWORD': 'S1nt3@g4',
         'HOST': 'localhost',
